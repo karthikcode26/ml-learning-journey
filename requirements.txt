@@ -1,0 +1,8 @@
+# Core ML learning toolkit — install with:  pip install -r requirements.txt
+# We start minimal and add more as lessons progress.
+
+pandas          # tabular data: load, clean, explore (like SQL for Python)
+numpy           # fast numerical arrays; pandas is built on top of it
+scikit-learn    # the standard classic-ML library: models, splits, metrics
+matplotlib      # plotting / charts, to *see* your data
+jupyter         # interactive notebooks — great for step-by-step exploration

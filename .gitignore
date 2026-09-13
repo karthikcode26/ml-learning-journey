@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Data files — datasets can be large; we keep download instructions instead.
+# (Comment these out if you want to commit small datasets.)
+data/*.csv
+data/*.xlsx
+data/*.zip
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
