@@ -15,6 +15,9 @@ data/*.csv
 data/*.xlsx
 data/*.zip
 
+# Trained model artifacts — regenerate with lesson_07_train_and_save.py
+models/*.joblib
+
 # OS / editor cruft
 .DS_Store
 .vscode/
