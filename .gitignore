@@ -22,3 +22,6 @@ models/*.joblib
 .DS_Store
 .vscode/
 .idea/
+
+# Anomaly-detection generated data
+anomaly-detection/*.csv
