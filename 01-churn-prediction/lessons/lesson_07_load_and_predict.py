@@ -7,7 +7,9 @@ NO train_test_split. We just LOAD the saved model artifact and use it.
 This is how prediction works in production: a service loads the model file once
 at startup, then answers prediction requests instantly.
 
-Run from the project root (with .venv activated), AFTER lesson_07_train_and_save:
+Run from the 01-churn-prediction folder (with .venv activated), AFTER lesson_07_train_and_save:
+
+    cd 01-churn-prediction
 
     python lessons/lesson_07_load_and_predict.py
 """

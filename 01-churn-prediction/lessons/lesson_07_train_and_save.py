@@ -10,7 +10,9 @@ The key MLOps idea: SEPARATE training from predicting.
 This script does the "train once and save" half. The saved file
 (models/churn_model.joblib) is called a MODEL ARTIFACT.
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_07_train_and_save.py
 """

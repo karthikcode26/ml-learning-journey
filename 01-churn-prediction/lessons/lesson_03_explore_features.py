@@ -4,7 +4,9 @@ Lesson 3 — Explore the features before modeling
 "Know your data before you model it." A good engineer always inspects the data
 first. Still NO model — we're building the habit of understanding data.
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_03_explore_features.py
 """

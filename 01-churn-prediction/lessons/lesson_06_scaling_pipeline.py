@@ -11,7 +11,9 @@ learn PIPELINE, which chains steps (scale -> train) into one clean object.
     StandardScaler  -> rescales each feature to mean 0, std 1
     Pipeline        -> bundles [scale, model] so they always run together
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_06_scaling_pipeline.py
 """

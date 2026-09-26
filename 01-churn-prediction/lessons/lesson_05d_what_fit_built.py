@@ -9,7 +9,9 @@ object. It is nothing more than:
 This script trains the model, then PRINTS everything it built, so you can see
 that "the trained model" is just a handful of numbers.
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_05d_what_fit_built.py
 """

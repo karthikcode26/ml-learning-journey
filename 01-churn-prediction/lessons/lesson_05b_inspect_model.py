@@ -10,7 +10,9 @@ The prediction formula for logistic regression is:
     score = bias + (w1 * feature1) + (w2 * feature2) + ... + (w30 * feature30)
     churn_probability = sigmoid(score)     # squashes score into 0..1
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_05b_inspect_model.py
 """

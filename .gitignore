@@ -11,17 +11,17 @@ env/
 
 # Data files — datasets can be large; we keep download instructions instead.
 # (Comment these out if you want to commit small datasets.)
-data/*.csv
-data/*.xlsx
-data/*.zip
+**/data/*.csv
+**/data/*.xlsx
+**/data/*.zip
 
-# Trained model artifacts — regenerate with lesson_07_train_and_save.py
-models/*.joblib
+# Trained model artifacts — regenerate with the train_and_save lesson
+**/models/*.joblib
+
+# Anomaly-detection generated data
+02-anomaly-detection/transactions.csv
 
 # OS / editor cruft
 .DS_Store
 .vscode/
 .idea/
-
-# Anomaly-detection generated data
-anomaly-detection/*.csv

@@ -19,7 +19,7 @@ does exactly this idea, optimized — next lesson.)
 
 Run (pure Python, no libraries needed):
 
-    python anomaly-detection/lesson_04a_isolation_from_scratch.py
+    cd 02-anomaly-detection && python lessons/lesson_04a_isolation_from_scratch.py
 
 Prerequisite: run lesson_02 first (creates transactions.csv).
 """
@@ -31,7 +31,7 @@ random.seed(1)
 
 
 def load():
-    rows = list(csv.DictReader(open("anomaly-detection/transactions.csv")))
+    rows = list(csv.DictReader(open("transactions.csv")))
     # Each point = [amount, items]; keep the planted label only for checking.
     points = [[float(r["amount"]), float(r["items"])] for r in rows]
     truth = [int(r["is_anomaly"]) for r in rows]

@@ -12,7 +12,7 @@ Key parameter:
 
 Run (with .venv activated):
 
-    python anomaly-detection/lesson_04b_isolation_forest.py
+    cd 02-anomaly-detection && python lessons/lesson_04b_isolation_forest.py
 
 Prerequisite: run lesson_02 first (creates transactions.csv).
 """
@@ -20,7 +20,7 @@ Prerequisite: run lesson_02 first (creates transactions.csv).
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 
-df = pd.read_csv("anomaly-detection/transactions.csv")
+df = pd.read_csv("transactions.csv")
 
 # The detector only sees the FEATURES — never the is_anomaly label.
 # (Unsupervised: it must find anomalies without being told the answers.)

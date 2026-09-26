@@ -10,14 +10,14 @@ Seeing this failure is the whole point — it motivates a smarter algorithm next
 
 Run (with .venv activated):
 
-    python anomaly-detection/lesson_03_zscore_limits.py
+    cd 02-anomaly-detection && python lessons/lesson_03_zscore_limits.py
 
 Prerequisite: run lesson_02 first (creates transactions.csv).
 """
 
 import pandas as pd
 
-df = pd.read_csv("anomaly-detection/transactions.csv")
+df = pd.read_csv("transactions.csv")
 
 # --- z-score for a single column: (value - mean) / std ---
 def zscores(series):

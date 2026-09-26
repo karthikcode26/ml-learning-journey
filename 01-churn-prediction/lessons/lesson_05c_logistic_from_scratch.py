@@ -11,7 +11,9 @@ plain Python so nothing is hidden. Two ideas power it:
 We train it on the SAME Telco data and compare its accuracy to scikit-learn's,
 to prove they do the same thing.
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_05c_logistic_from_scratch.py
 """

@@ -13,7 +13,7 @@ We also introduce the two metrics that name this trade-off (same as churn!):
 
 Run (with .venv activated):
 
-    python anomaly-detection/lesson_05_tuning.py
+    cd 02-anomaly-detection && python lessons/lesson_05_tuning.py
 
 Prerequisite: run lesson_02 first (creates transactions.csv).
 """
@@ -21,7 +21,7 @@ Prerequisite: run lesson_02 first (creates transactions.csv).
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 
-df = pd.read_csv("anomaly-detection/transactions.csv")
+df = pd.read_csv("transactions.csv")
 X = df[["amount", "items"]]
 truth = df["is_anomaly"]
 

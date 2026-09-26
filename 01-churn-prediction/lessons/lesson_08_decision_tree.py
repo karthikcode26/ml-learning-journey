@@ -17,7 +17,9 @@ repeatedly picking the split that best separates churners from non-churners.
 Great news: swapping models in scikit-learn is trivial — same .fit()/.predict()
 as Logistic Regression. Only the import and one line change.
 
-Run (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_08_decision_tree.py
 

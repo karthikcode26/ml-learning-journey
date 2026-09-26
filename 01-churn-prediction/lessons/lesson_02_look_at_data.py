@@ -4,7 +4,9 @@ Lesson 2 — Load and look at real data
 Your FIRST piece of ML code. We don't build a model yet — we just LOAD the
 Telco Churn dataset and look at it, so we understand what we're working with.
 
-Run it from the project root (with your .venv activated):
+Run from the 01-churn-prediction folder (with your .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_02_look_at_data.py
 

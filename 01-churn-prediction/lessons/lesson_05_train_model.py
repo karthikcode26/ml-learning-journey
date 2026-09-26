@@ -11,7 +11,9 @@ The full ML loop:
   4. PREDICT on the test set
   5. EVALUATE — accuracy vs. the baseline
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_05_train_model.py
 

@@ -17,20 +17,20 @@ check our detector later. In real life you usually don't have these labels.
 
 Run it (pure Python, no libraries needed):
 
-    python anomaly-detection/lesson_02_generate_data.py
+    cd 02-anomaly-detection
+    python lessons/lesson_02_generate_data.py
 
-Output: anomaly-detection/transactions.csv
+Output: transactions.csv (in the 02-anomaly-detection folder)
 """
 
 import csv
-import os
 import random
 
 random.seed(7)   # reproducible: same dataset every run
 
 N_NORMAL = 480
 N_ANOMALY = 20   # ~4% anomalies — rare, like real life
-OUT = "anomaly-detection/transactions.csv"
+OUT = "transactions.csv"
 
 
 def make_normal():
@@ -59,7 +59,6 @@ def main():
     rows += [make_anomaly() for _ in range(N_ANOMALY)]
     random.shuffle(rows)   # mix the anomalies in among the normal ones
 
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["amount", "items", "is_anomaly"])
         w.writeheader()

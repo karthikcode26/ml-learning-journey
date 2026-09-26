@@ -6,7 +6,9 @@ Models eat CLEAN NUMBERS only. This script does the 3 prep jobs:
   2. ENCODE  — turn text/categorical columns into numbers
   3. SPLIT   — separate features (X) from label (y)
 
-Run from the project root (with .venv activated):
+Run from the 01-churn-prediction folder (with .venv activated):
+
+    cd 01-churn-prediction
 
     python lessons/lesson_04_prepare_data.py
 """

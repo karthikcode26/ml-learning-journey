@@ -3,85 +3,61 @@
 Learning **Machine Learning** and **MLOps** from the basics — slowly, completely,
 and hands-on. Built by a Data Engineer, one small step at a time.
 
-Each lesson introduces **one concept**, with a tiny runnable example, before
-moving on. No rushing, no black boxes.
+Each project introduces a real ML task with bite-sized lessons: a concept, a
+tiny runnable script, then a checkpoint before moving on.
 
 ---
 
-## Lesson 0 — Set up your machine
+## Projects
 
-Before any ML, let's get your laptop ready. This is a one-time setup.
+| # | Project | ML type | What it teaches |
+|---|---------|---------|-----------------|
+| **01** | [Churn Prediction](01-churn-prediction/) | **Supervised** | Learn from labeled answers: logistic regression, the full ML workflow, saving a model |
+| **02** | [Anomaly Detection](02-anomaly-detection/) | **Unsupervised** | Find patterns without labels: z-score, Isolation Forest, precision/recall tuning |
 
-### 1. Check if you have Python 3
+Each project folder has its own `README.md` with setup and run instructions.
 
-Open your terminal and run:
+---
 
-```bash
-python3 --version
-```
+## The big picture: two types of ML
 
-- **Mac / Linux:** Python 3 is usually already installed. If not, install from
-  [python.org](https://www.python.org/downloads/) or via Homebrew (`brew install python`).
-- **Windows:** if it's missing, install from [python.org](https://www.python.org/downloads/)
-  and **check "Add Python to PATH"** during install. Then use `python` instead of `python3`.
+- **Supervised** (Project 01) — you *have* the answers (labels) and learn to
+  predict them. Example: "will this customer churn?"
+- **Unsupervised** (Project 02) — you *don't* have answers; the model finds
+  structure or oddities on its own. Example: "is this transaction weird?"
 
-You want **Python 3.10 or newer**.
+---
 
-### 2. Clone this repository
-
-```bash
-git clone https://github.com/karthikcode26/ml-learning-journey.git
-cd ml-learning-journey
-```
-
-### 3. Create a virtual environment
-
-A "virtual environment" (venv) is an isolated sandbox for this project's
-libraries, so they don't clash with other Python projects. This is a standard
-professional practice.
+## One-time setup
 
 ```bash
-# Create it (do this once)
+# from the repo root
 python3 -m venv .venv
-
-# Activate it (do this every time you work on the project)
-# Mac / Linux:
-source .venv/bin/activate
-# Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-```
-
-When active, your prompt shows `(.venv)`. To leave later: `deactivate`.
-
-### 4. Install the libraries
-
-```bash
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-This installs the real ML toolkit (pandas, scikit-learn, etc.) that we'll use
-throughout the lessons.
-
-### 5. Verify it worked
-
-```bash
-python -c "import pandas, sklearn; print('Setup OK — pandas', pandas.__version__, '| scikit-learn', sklearn.__version__)"
-```
-
-If you see a version printed, **you're ready.** 🎉
+Then `cd` into a project folder and follow its README.
 
 ---
 
-## What's next
+## Repo layout
 
-Once setup works on your laptop, we'll start **Lesson 1: What Machine Learning
-actually is** — and download our first real open dataset (see `data/README.md`).
+```
+ml-learning-journey/
+├── README.md                  ← you are here
+├── PROGRESS.md                ← learning log / checkpoint
+├── requirements.txt           ← shared Python dependencies
+├── 01-churn-prediction/       ← Project 01 (supervised)
+│   ├── README.md
+│   ├── data/                  ← dataset download instructions
+│   └── lessons/
+└── 02-anomaly-detection/      ← Project 02 (unsupervised)
+    ├── README.md
+    └── lessons/
+```
 
-## Roadmap
+## Progress & roadmap
 
-- [x] **Lesson 0** — Machine setup (this file)
-- [ ] **Lesson 1** — What ML is: rules vs. examples
-- [ ] **Lesson 2** — Loading & exploring a real dataset (pandas)
-- [ ] **Lesson 3** — Your first model (train / test / evaluate)
-- [ ] **Lesson 4** — Metrics that matter (precision, recall, confusion matrix)
-- [ ] Later — MLOps: experiment tracking, serving, monitoring
+See [PROGRESS.md](PROGRESS.md) for what's done and what's next
+(more models, evaluation, feature engineering, then MLOps: tracking → serving → monitoring).
