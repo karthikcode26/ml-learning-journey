@@ -6,3 +6,9 @@ numpy           # fast numerical arrays; pandas is built on top of it
 scikit-learn    # the standard classic-ML library: models, splits, metrics
 matplotlib      # plotting / charts, to *see* your data
 jupyter         # interactive notebooks — great for step-by-step exploration
+
+
+# --- MLOps serving (Project 03) ---
+joblib          # save/load trained model artifacts
+fastapi         # build the prediction web API
+uvicorn         # the web server that runs the FastAPI app
